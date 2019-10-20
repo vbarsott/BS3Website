@@ -10,7 +10,11 @@ var port = 3000;
 var app = express();
 
 // this will serve static files from the src folder, i e , reconhece todos os arquivos dentro do foldes src
-app.use("/", express.static(path.join(__dirname, "../src")));
+app.use(express.static(path.join(__dirname, "../src")));
+
+// this will serve static files from the node_modules folder
+app.use(express.static(path.join(__dirname, "../node_modules/bootstrap/dist")));
+app.use(express.static(path.join(__dirname, "../node_modules/jquery/dist")));
 
 // tells the server how it should work for requests on the root path (/) of the site
 // when the server receives a request http get on the root it should execute the function to set the browser response
