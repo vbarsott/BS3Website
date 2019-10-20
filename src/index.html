@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>JS Project</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+    />
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div class="container">
-      <div vb-include="header.html"></div>
-      <h1>Index page</h1>
-      <div vb-include="footer.html"></div>
-    </div>
+    <div vb-include="header.html"></div>
+    <main class="container">
+      <div class="row">
+        <aside class="col-sm-2">col 1</aside>
+        <section class="col-sm-8">col 2</section>
+        <aside class="col-sm-2">col 3</aside>
+      </div>
+    </main>
+    <div vb-include="footer.html"></div>
 
+    <!-- Scripts section -->
     <script src="/js/main.js"></script>
     <script>
       includeHTML();

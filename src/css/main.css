@@ -1,5 +1,10 @@
-.box {
-  width: 200px;
-  height: 300px;
-  background: #f00;
+body {
+  font-family: "Open Sans", sans-serif;
+}
+header,
+footer {
+  background-color: #333;
+  color: #ddd;
+  padding: 20px;
+  text-align: center;
 }
