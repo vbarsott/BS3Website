@@ -8,7 +8,7 @@
     "serve": "node buildScripts/srcServer.js",
     "localtunnel": "lt --port 3000",
     "share": "npm-run-all --parallel serve localtunnel",
-    "device-wall": "browser-sync start --proxy 'localhost:3000' --files 'src/*.*'",
+    "device-wall": "browser-sync http://localhost:3000 src -w",
     "serve-wall": "npm-run-all --parallel serve device-wall"
   },
   "author": "Cory House",
